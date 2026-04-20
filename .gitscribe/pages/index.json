@@ -1,0 +1,27 @@
+{
+  "slug": "index",
+  "title": "Thistleberry",
+  "description": "Starter homepage for a GitHub-native site template.",
+  "updatedAt": "2026-04-20T00:00:00.000Z",
+  "blocks": [
+    {
+      "id": "hero0001",
+      "type": "hero",
+      "kicker": "Template installed",
+      "headline": "Your flat HTML site is live.",
+      "subheading": "Thistleberry keeps structured source in Git and publishes deterministic HTML to GitHub Pages."
+    },
+    {
+      "id": "rich0001",
+      "type": "richText",
+      "html": "<h2 id=\"next-steps\">Start here</h2><p>You created a new site from the template. The homepage source lives in <code>.gitscribe/pages/index.json</code> and the public output lives in <code>site/index.html</code>.</p><p>Thistleberry is the translation layer between visual editing and final HTML. Edit the structured source through the CMS app or change the JSON directly if you prefer.</p><h2>Repository setup</h2><ol><li>Open this repository on GitHub.</li><li>Go to <strong>Settings</strong> then <strong>Pages</strong>.</li><li>Under <strong>Build and deployment</strong>, set <strong>Source</strong> to <strong>GitHub Actions</strong>.</li><li>Push to <code>main</code> and wait for the <code>Deploy Pages Site</code> workflow to finish.</li></ol>"
+    },
+    {
+      "id": "cta00001",
+      "type": "cta",
+      "label": "Read template setup",
+      "href": "#next-steps",
+      "note": "The repository contains exact setup and editing instructions."
+    }
+  ]
+}

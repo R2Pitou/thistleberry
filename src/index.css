@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-ink: #171321;
+  --color-paper: #f7f2ea;
+  --color-sand: #d4c8b9;
+  --color-mint: #c89bf0;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    @apply bg-ink text-paper antialiased;
+  }
+
+  code {
+    @apply rounded bg-white/10 px-1.5 py-0.5 font-mono text-[0.92em];
+  }
+
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+}
