@@ -170,23 +170,24 @@
         <section class="hero">
           <p class="eyebrow">Template installed</p>
           <h1>Your flat HTML site is live.</h1>
-          <p class="lead">Thistleberry keeps structured source in Git and publishes deterministic HTML to GitHub Pages.</p>
+          <p class="lead">You are looking at the published site, not the editor. Thistleberry keeps structured source in Git and publishes deterministic HTML to GitHub Pages.</p>
         </section>
         <section class="rich-text">
-          <h2 id="next-steps">Start here</h2>
-          <p>You created a new site from the template. The homepage source lives in <code>.gitscribe/pages/index.json</code> and the public output lives in <code>site/index.html</code>.</p>
-          <p>Thistleberry is the translation layer between visual editing and final HTML. Edit the structured source through the CMS app or change the JSON directly if you prefer.</p>
-          <h2>Repository setup</h2>
+          <h2 id="next-steps">What this page means</h2>
+          <p>If you can see this page, the template deployed correctly and GitHub Pages is working.</p>
+          <p>This page is only the published output. It does <strong>not</strong> edit itself. Thistleberry's editor lives in the repository and runs locally.</p>
+          <h2>What to do next</h2>
           <ol>
-            <li>Open this repository on GitHub.</li>
-            <li>Go to <strong>Settings</strong> then <strong>Pages</strong>.</li>
-            <li>Under <strong>Build and deployment</strong>, set <strong>Source</strong> to <strong>GitHub Actions</strong>.</li>
-            <li>Push to <code>main</code> and wait for the <code>Deploy Pages Site</code> workflow to finish.</li>
+            <li><strong>Go back to your repository on GitHub.</strong> If Pages is not enabled yet, open <strong>Settings</strong> then <strong>Pages</strong> and set <strong>Source</strong> to <strong>GitHub Actions</strong>.</li>
+            <li><strong>Choose how you want to edit.</strong> If you want the visual editor, run the local app with <code>npm install</code> and <code>npm run dev</code>, then open <code>http://localhost:3000</code>. If you want the fastest possible change, edit <code>site/index.html</code> directly on GitHub.</li>
+            <li><strong>Look at the source of this page.</strong> The canonical page document lives in <code>.gitscribe/pages/index.json</code>. The published HTML lives in <code>site/index.html</code>.</li>
           </ol>
+          <h2>What Thistleberry is doing</h2>
+          <p>Thistleberry is the translation layer between a visual editor and final static HTML. The repo stays the source of truth. There is no database behind this site.</p>
         </section>
         <section class="cta">
-          <a class="cta-link" href="#next-steps">Review setup steps</a>
-          <p>The repository contains the CMS app, the source document, and the generated HTML.</p>
+          <a class="cta-link" href="#next-steps">Read the next steps</a>
+          <p>Start with the repository. This public page is the output, not the editing UI.</p>
         </section>
       </main>
       <p class="meta">Starter page committed with the template repository.</p>
