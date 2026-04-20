@@ -383,6 +383,20 @@
           <p>
             Create a GitHub fine-grained token with <strong>Contents: Read and write</strong> access to this repository, or use a classic token with <code>repo</code> scope. The token is used from your browser to call the GitHub API directly.
           </p>
+          <h3>How to create the token</h3>
+          <ol>
+            <li>Open GitHub and go to <strong>Settings</strong>.</li>
+            <li>In the left sidebar, open <strong>Developer settings</strong>.</li>
+            <li>Open <strong>Personal access tokens</strong>, then <strong>Fine-grained tokens</strong>.</li>
+            <li>Click <strong>Generate new token</strong>.</li>
+            <li>Set <strong>Resource owner</strong> to the account that owns this repository.</li>
+            <li>Set <strong>Repository access</strong> to <strong>Only select repositories</strong>, then choose this repository.</li>
+            <li>Under <strong>Permissions</strong>, set <strong>Contents</strong> to <strong>Read and write</strong>.</li>
+            <li>Generate the token, copy it immediately, then paste it into the editor panel on this page.</li>
+          </ol>
+          <p>
+            Direct link: <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noreferrer">github.com/settings/personal-access-tokens/new</a>
+          </p>
           <h2>What Thistleberry is now</h2>
           <p>
             Thistleberry is a thin visual layer on top of a flat HTML page. GitHub remains the source of truth. The browser overlay just helps you edit the page visually and write the updated HTML back to the repository.
@@ -430,14 +444,14 @@
         </div>
         <label class="editor-label">
           GitHub token
-          <input class="editor-input" name="token" type="password" placeholder="Paste a token with Contents write access" />
+          <input class="editor-input" name="token" type="password" placeholder="Paste a fine-grained token with Contents: Read and write" />
         </label>
         <label class="editor-label">
           Commit message
           <input class="editor-input" name="message" value="Edit page from Thistleberry" />
         </label>
         <p class="editor-help">
-          Use a fine-grained token with <strong>Contents: Read and write</strong> for this repository. The token stays in your browser and is not written into the page.
+          Create it on GitHub under <strong>Settings → Developer settings → Personal access tokens → Fine-grained tokens</strong>. Give it <strong>Contents: Read and write</strong> for this repository only. The token stays in your browser and is not written into the page.
         </p>
         <p class="editor-status" data-editor-status></p>
       </div>
